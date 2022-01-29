@@ -1,0 +1,45 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<div class="container flex lists">
+  <div class="one_list">
+    <div class="header_title">
+        <span class="input_title">To Do List</span>
+      </div>
+    <div class="header_title1">
+      <span class="input_title" >Tasks Added</span>
+      <span class="input_title" id = "count">2</span>
+      <!-- <button type="button" class="edit_title_button"><i class="fa fa-pencil" aria-hidden="true"></i></button> -->
+    </div>
+    <form id="add_task">
+      <input type="text" id="input_task" name="input" placeholder="New task">
+      <button type="button" id="add_button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+    </form>
+    <div>
+      <ul id="task_list">
+        <li data-aos="fade-right">
+          <input type="checkbox">
+          <span class="input">Do homework</span>
+          <button type="button" class="edit_task_button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+          <button type="button" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+        </li>
+        <li data-aos="fade-right">
+          <input type="checkbox">
+          <span class="input">Workout for 1 hour</span>
+          <button type="button" class="edit_task_button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+          <button type="button" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+        </li>
+      </ul>	
+      <h2 id="completed_title">Completed</h2>
+      <ul id="completed_list"></ul>				
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
